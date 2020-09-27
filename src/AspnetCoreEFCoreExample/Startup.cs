@@ -1,5 +1,10 @@
-﻿using AspnetCoreEFCoreExample.Models;
+﻿using System.Reflection;
+using AspnetCoreEFCoreExample.Automapper;
+using AspnetCoreEFCoreExample.DTO;
+using AspnetCoreEFCoreExample.Mapping;
+using AspnetCoreEFCoreExample.Models;
 using AspnetCoreEFCoreExample.Repositories;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +29,7 @@ namespace AspnetCoreEFCoreExample
             var configurationSection = Configuration.GetSection("ConnectionStrings:DefaultConnection");
             services.AddDbContext<DataBaseContext>(options => options.UseSqlServer(configurationSection.Value));
             // Add framework services.
+            services.AddAutoMapper(typeof(AutoMapperProfile).GetTypeInfo().Assembly);
 
             services.AddMvc();
             services.AddScoped<IExampleRepository, ExampleRepository>();
@@ -32,18 +38,37 @@ namespace AspnetCoreEFCoreExample
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            AutoMapper.Mapper.Initialize(config =>
+            //AutoMapper.Mapper.Initialize(cfg =>
+            //{
+            //    cfg.CreateMap<Element, ElementSimpleDto>();
+            //    cfg.CreateMap(typeof(Element), typeof(ElementDto<>));
+            //    //.ForMember("User", t => t.MapFrom("User"));
+            //    cfg.CreateMap<User, UserBasicInfosDto>();
+            //    cfg.CreateMap<User, UserMainInfosDto>();
+            //    cfg.CreateMap<Category, CategoryMainInfosDto>();
+            //    cfg.CreateMap<Category, CategoryBasicInfosDto>();
+            //});
+
+            //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            //loggerFactory.AddDebug();
+
+            //app.UseDefaultFiles();
+            //app.UseStaticFiles();
+
+            if (env.IsDevelopment())
             {
-                config.CreateMap<MyModel, MyModelViewModel>().ReverseMap();
-            });
+                app.UseDeveloperExceptionPage();
+            }
 
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
-
-            app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseRouting();
+            app.UseCors();
 
-            app.UseMvc();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+            });
+            //app.UseMvc();
         }
     }
 }
