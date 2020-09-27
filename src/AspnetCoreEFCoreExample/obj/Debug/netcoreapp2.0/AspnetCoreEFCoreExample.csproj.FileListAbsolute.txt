@@ -1,0 +1,15 @@
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\bin\Debug\netcoreapp2.0\web.config
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\bin\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.deps.json
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\bin\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.runtimeconfig.json
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\bin\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.runtimeconfig.dev.json
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\bin\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.dll
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\bin\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.pdb
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\obj\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.csprojAssemblyReference.cache
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\obj\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.AssemblyInfoInputs.cache
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\obj\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.AssemblyInfo.cs
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\obj\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.csproj.CoreCompileInputs.cache
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\obj\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.dll
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\obj\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.pdb
+C:\Users\Jean-Fixe\Source\Repos\ASPNETCore-Entity-Framework-Core\src\AspnetCoreEFCoreExample\obj\Debug\netcoreapp2.0\AspnetCoreEFCoreExample.genruntimeconfig.cache
